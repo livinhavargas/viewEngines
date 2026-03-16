@@ -1,0 +1,46 @@
+extends layout
+
+block content
+  style.
+    .container {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 150px;
+      text-align: center;
+      background: #fff;
+    }
+
+    button {
+      margin-top: 8px;
+      padding: 5px 10px;
+      border: none;
+      background: black;
+      color: white;
+      cursor: pointer;
+    }
+
+  h1= title
+  p Loja de roupas
+
+  .container
+    .card
+      h3 Camiseta
+      p R$ 40
+      button Comprar
+
+    .card
+      h3 Calça
+      p R$ 90
+      button Comprar
+
+    .card
+      h3 Jaqueta
+      p R$ 150
+      button Comprar

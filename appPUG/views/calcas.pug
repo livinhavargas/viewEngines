@@ -1,0 +1,38 @@
+extends layout
+
+block content
+  style.
+    body {
+      font-family: Arial, sans-serif;
+      background: #e0f7fa;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #00796b;
+    }
+
+    h2 {
+      color: #004d40;
+    }
+
+    p {
+      color: #004d40;
+      font-size: 16px;
+    }
+
+    img {
+      width: 300px;
+      height: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+  h1= title
+  h2> Coleção de Calças
+  p Welcome to #{title}
+  
+  img(src='/images/calcas.jpeg', alt='Calças')
+  p Nossas calças são confortáveis e estilosas, ideais para qualquer momento do dia!

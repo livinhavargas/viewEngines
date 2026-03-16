@@ -1,0 +1,38 @@
+extends layout
+
+block content
+  style.
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff8dc;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ff8c00;
+    }
+
+    h2 {
+      color: #8b4513;
+    }
+
+    p {
+      color: #8b4513;
+      font-size: 16px;
+    }
+
+    img {
+      width: 300px;
+      height: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+  h1= title
+  h2> Coleção de Camisetas
+  p Welcome to #{title}
+  
+  img(src='/images/camisetas.jpeg', alt='Camisetas')
+  p Nossas camisetas são modernas e confortáveis, perfeitas para o dia a dia!

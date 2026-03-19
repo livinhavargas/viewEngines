@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title Lista de Produtos
+    style.
+      table { width: 50%; border-collapse: collapse; margin-top: 20px; }
+      th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+      th { background-color: #f4f4f4; }
+
+  body
+    h1 Nossos Produtos
+    
+    if produtos.length > 0
+      table
+        thead
+          tr
+            th ID
+            th Nome
+            th Preço
+        tbody
+          each produto in produtos
+            tr
+              td= produto.id
+              td= produto.nome
+              td= 'R$ ' + produto.preco.toFixed(2)
+    else
+      p Nenhum produto encontrado.
